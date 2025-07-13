@@ -1,6 +1,23 @@
 # Network Security Project for Phishing Data
 This project focuses on detecting phishing websites using machine learning pipelines. The workflow includes data ingestion from a MongoDB Atlas database, transformation, model training, evaluation, and deployment using Docker and AWS services.
 
+## 📑 Table of Contents
+
+- [ Dataset Overview](#dataset-overview)
+- [ Frontend (HTML + Jinja2)](#frontend-html--jinja2)
+- [ Project Architecture](#project-architecture)
+  - [ ML Pipeline Overview](#ml-pipeline-overview)
+    - [ Data Ingestion](#data-ingestion)
+    - [ Data Validation](#data-validation)
+    - [ Data Transformation](#data-transformation)
+    - [ Model Training](#model-training)
+    - [ Model Evaluation](#model-evaluation)
+    - [ Model Pusher](#model-pusher)
+    - [ Model Training Flow](#model-training-flow)
+- [ Deployment Architecture](#deployment-architecture)
+- [ Tech Stack](#tech-stack)
+- [ Model Artifacts](#model-artifacts)
+
 ## Dataset Overview
 The dataset consists of numerical features extracted from URLs to identify phishing sites. Below are some of the columns:
 
@@ -31,6 +48,7 @@ A simple web dashboard displays prediction results, and model status directly on
 
 
 ## Project Architecture
+![Architecture Diagram](Project_Architecture.png)
 ### ML Pipeline Overview
 
  #### Data Ingestion
